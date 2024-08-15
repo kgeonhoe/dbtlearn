@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://1138a590.us1a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=1HNIGT72IN_dWlTnq0OKs6tMScHyjdncDUmGJsmvDV5cTfAt-k-vqTl4CulFNcMI
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: grey kim
+      email: kgeonhoe@gmail.com
